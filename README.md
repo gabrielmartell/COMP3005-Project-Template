@@ -11,7 +11,7 @@ Throughout running the script, the connection is dropped from the initial databa
 
 ### DO NOT CHANGE THE NAMES OF THE DATABASES.
 For the initial database, please create your own database with the same name. Otherwise, your submission will be void.
-For the exported database, it is recommended to leave as is.
+For the exported database, it is recommended to leave as is but you can rename with no penalty.
 
 After you set these up and write your queries for each question, you can run the script which will both print the time taken (secs) and create your .csv files. 
 
