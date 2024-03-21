@@ -7,7 +7,12 @@ Your task is to ONLY write your SQL queries within the prompted space within eac
 ## How to Test for Yourself:
 This script will first connect to an initial database, named by the global variable "initial_database" - please change this to the name to some initial database __you__ created.
 
-Throughout running the script, the connection is dropped from the initial database and then reconnected to an exported database, named as variable "export_database_name". This can be named whatever, but you can keep it as "query_database".
+Throughout running the script, the connection is dropped from the initial database, named as variable "initial_database" and then reconnected to an exported database, named as variable "export_database_name". 
+
+### DO NOT CHANGE THE NAMES OF THE DATABASES.
+For the initial database, please create your own database with the same name. Otherwise, your submission will be void.
+For the exported database, it is recommended to leave as is.
+
 After you set these up and write your queries for each question, you can run the script which will both print the time taken (secs) and create your .csv files. 
 
 The other prints before the execution times are printed are from the dump files, which can be ignored.
