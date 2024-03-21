@@ -18,7 +18,7 @@ After you set these up and write your queries for each question, you can run the
 The other prints before the execution times are printed are from the dump files, which can be ignored.
 
 ## What to Submit?
-In your submission repository, you are ***only*** submitting this template script "queries.py" and your dbexport.sql. Any additional submissions will ***void*** the ***entire submission.***
+In your submission repository, you are ***only*** submitting this template script "queries.py" and *your* dbexport.sql. Any additional submissions will ***void*** the ***entire submission.***
 
   - What will VOID your submission?
     - Any additional submissions in your repository.
