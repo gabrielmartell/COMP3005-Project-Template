@@ -15,8 +15,10 @@ import time
 import subprocess
 import os
 
-# Name of YOUR Database
+# Name of initial database - this is for initial connections. Do NOT change the name, instead, you should create your initial database with this name.
 initial_database = "project_database"
+
+# Name of exported databse - this is for your queries, I would recommend to leave as is. 
 export_database_name = "query_database"
 
 # Do NOT Change
