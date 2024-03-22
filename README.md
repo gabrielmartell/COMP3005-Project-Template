@@ -23,7 +23,8 @@ For the initial database, please create your own database with the same name. Ot
 For the exported database, it is recommended to leave as is but you can rename with no issue. Although it would be easier to leave it unmodified.
 
 ## What to Submit?
-In your submission repository, you are ***only*** submitting this template script "queries.py" and *your* dbexport.sql. Any additional submissions will ***void*** the ***entire submission.***
+Your source code file(s) that maps and loads the existing JSON dataset from the JSON files into your database. This code must be stored in a directory named "json_loader".
+Therefore, in your submission repository, you are ***only*** submitting the template script "queries.py", *your* dbexport.sql, and this directory. Any additional submissions will ***void*** the ***entire submission.***
 
   - What will VOID your submission?
     - Any additional submissions in your repository.
