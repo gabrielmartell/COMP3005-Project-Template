@@ -7,6 +7,9 @@ This is the template code for the COMP3005 Database Project.
 - dbexport.sql
   - This is an **example** of an exported database.
 
+## Modules and Dependencies:
+This code primairly uses the psycopg3 module, installation and documentation is listed in this [hyperlink.](https://www.psycopg.org/psycopg3/docs/)
+
 ## How Does This Work?
 Your task is to ONLY write your SQL queries within the prompted space within each Q_# method (where # is the question number).
 
@@ -32,7 +35,7 @@ Therefore, in your submission repository, you are ***only*** submitting the temp
     - Changing the name of the "initial_database" variable.
     - Other alterations to code other than the query executions (please view ACADEMIC INTEGRITY below).
 
-## Bugs?
+## Bugs or Issues?
 If you run into any issues or bugs, please notify me in the [Repository Issues Tab.](https://github.com/gabrielmartell/COMP3305-Project-Template/issues)
 
 # ACADEMIC INTEGRITY
