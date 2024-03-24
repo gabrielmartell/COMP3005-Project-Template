@@ -33,7 +33,7 @@ Therefore, in your submission repository, you are ***only*** submitting the temp
   - What will VOID your submission?
     - Any additional submissions in your repository.
     - OTHER Print statements.
-    - Changing the name of the "initial_database" variable.
+    - Changing the name of the databases names, passwords, users, ports, etc.
     - Other alterations to code other than the query executions (please view ACADEMIC INTEGRITY below).
 
 ## Bugs or Issues?
