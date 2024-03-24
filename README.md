@@ -9,12 +9,13 @@ This is the template code for the COMP3005 Database Project.
 
 ## Modules and Dependencies:
 This code primairly uses the psycopg3 module, installation and documentation is listed in this [hyperlink.](https://www.psycopg.org/psycopg3/docs/)
+This also only works on a Ubuntu Linux environment, I'd suggest getting a [Virtual Machine](https://carleton.ca/scs/tech-support/virtual-machines/) to accomplish this. Aim for a Ubuntu 22.04 Linux Environment.
 
 ## How Does This Work?
 Your task is to ONLY write your SQL queries within the prompted space within each Q_# method (where # is the question number).
 
 ## How to Test for Yourself:
-This script will first connect to an initial database, named by the global variable "initial_database" - please do **NOT** change this name. You should create a database named "project_database" for testing.
+This script will first connect to an initial database, named by the global variable "initial_database" - please do **NOT** change this name. You should create a database named "project_database" for testing, with the password, user, port and host are also the same as the ones listed in the code.
 Throughout running the script, the connection is dropped from the initial database, named as variable "initial_database" and then reconnected to an exported database, named as variable "export_database_name". 
 
 After you set these up and write your queries for each question, you can run the script which will both print the time taken (secs) and create your .csv files. 
