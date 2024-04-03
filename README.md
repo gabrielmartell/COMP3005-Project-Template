@@ -1,5 +1,10 @@
-# COMP3005 Template Code
+# COMP3005 Template Code (ver 1.1)
 This is the template code for the COMP3005 Database Project.
+
+## Updates (04/03/2024)
+Ver 1.0 -> Ver 1.1
+Added some more comments for accurate guidance
+Changed time collection - no longer using the overhead of Python but the SQL "EXPLAIN ANALYZE" computations.
 
 ## Contains:
 - queries.py
