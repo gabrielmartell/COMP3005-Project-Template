@@ -63,6 +63,51 @@ Your source code file(s) that maps and loads the existing JSON dataset from the 
 Therefore, in your submission repository, you are _only_ submitting the script "queries.py", *your* dbexport.sql, and the "json_loader" directory.
 Any additional submissions will ***void*** the entire ***code submission.***
 
+### How to Submit Large Files
+GitHub has a restriction to submission size - if any file exceeds 100.00 MB it simply cannot be added to your repository - so for this case, your dbexport.sql. Luckily, you may use Git LFS to your advantage.
+Git LFS (Large File Storage) allows the submission of these large files by using reference pointers to get this data - this will be beneficial for both you and the grader.
+**Steps:**
+- Install _git_ and _git lfs_ in your Linux terminal, use the following commands to install **both**.
+  - ```sudo apt-get install git-all```
+  - ```curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash```
+  - ```sudo apt-get install git-lfs```
+  
+  Next, you will set up your GitHub username and email,
+  - ```git config --global user.name "Your Name"```
+  - ```git config --global user.email "Your Email"```
+- Have a directory based on your submission, in other words, have a folder that will be your submission containing all files you will have in your repository.
+  
+![image](https://github.com/gabrielmartell/COMP3005-Project-Template/assets/120336080/6424f73f-28fb-4f6c-8b34-44aa712c8617)
+
+- Open the terminal with this directory, and then write the following line, this will create a _HIDDEN_ .git folder in your folder:
+  - ```git init```
+  
+![image](https://github.com/gabrielmartell/COMP3005-Project-Template/assets/120336080/8df92eec-ab31-4c89-b5a5-b7ff87cf5041)
+
+- Then, write the following line to track your dbexport into a smaller reference file:
+  - ```git lfs track "*.sql"```
+  
+![image](https://github.com/gabrielmartell/COMP3005-Project-Template/assets/120336080/5b49a789-20be-4b3c-9be7-654577a3fad4)
+
+- Once this is done, you can then do the following lines of code in your terminal.
+  - ```git branch -M main```
+  - ```git remote add origin "your submission .git link"```
+  - ```git add "your files that you will add to your submission"```
+    - Example: ```git add queries.py```
+- Once you add your files, you can check your additions to the commit by doing ```git status```
+  - BEFORE
+    
+  ![image](https://github.com/gabrielmartell/COMP3005-Project-Template/assets/120336080/847a64b7-6ff3-44ae-9f43-a1cc19b26bc6)
+  - AFTER ADDING
+    
+  ![image](https://github.com/gabrielmartell/COMP3005-Project-Template/assets/120336080/03af84d0-6ef3-4e61-aba7-1b23e3f1734e)
+- Then, you can commit using ```git commit -m "Commit Message"```
+- And then finally, you can push to your repository, ```git push -u origin main```
+- The terminal would then prompt you for your GitHub username and password, however, as of August 13th, 2021, GitHub has removed account password authentication for terminal pushes. Therefore, please use this following [article](https://dev.to/shafia/support-for-password-authentication-was-removed-please-use-a-personal-access-token-instead-4nbk) to set up your own authentication key.
+
+- Your following submission should then look like the following:
+![image](https://github.com/gabrielmartell/COMP3005-Project-Template/assets/120336080/19e76627-a700-4886-b294-afb95af25999)
+
 ## Bugs and Questions:
 If you run into any fatal errors or bugs, please consult the [closed issues](https://github.com/gabrielmartell/COMP3005-Project-Template/issues?q=is%3Aissue+is%3Aclosed) first as it might have already been solved.
 If it hasn't been solved, and/or you also have questions, please feel free to create an [open issue!](https://github.com/gabrielmartell/COMP3305-Project-Template/issues). If need be, you can also shoot me an email at gabemartell@cmail.carleton.ca.
