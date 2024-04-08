@@ -66,6 +66,7 @@ Any additional submissions will ***void*** the entire ***code submission.***
 ### How to Submit Large Files
 GitHub has a restriction to submission size - if any file exceeds 100.00 MB it simply cannot be added to your repository - so for this case, your dbexport.sql. Luckily, you may use Git LFS to your advantage.
 Git LFS (Large File Storage) allows the submission of these large files by using reference pointers to get this data - this will be beneficial for both you and the grader.
+
 **Steps:**
 - Install _git_ and _git lfs_ in your Linux terminal, use the following commands to install **both**.
   - ```sudo apt-get install git-all```
@@ -75,7 +76,7 @@ Git LFS (Large File Storage) allows the submission of these large files by using
   Next, you will set up your GitHub username and email,
   - ```git config --global user.name "Your Name"```
   - ```git config --global user.email "Your Email"```
-- Have a directory based on your submission, in other words, have a folder that will be your submission containing all files you will have in your repository.
+- Have a directory based on your submission, in other words, have a folder on your system containing all files you will have in your repository submission. This is both easier and organized for you, but also allows you to do the git commands without the worry of affected anything outside of it.
   
 ![image](https://github.com/gabrielmartell/COMP3005-Project-Template/assets/120336080/6424f73f-28fb-4f6c-8b34-44aa712c8617)
 
@@ -110,7 +111,7 @@ Git LFS (Large File Storage) allows the submission of these large files by using
 
 ## Bugs and Questions:
 If you run into any fatal errors or bugs, please consult the [closed issues](https://github.com/gabrielmartell/COMP3005-Project-Template/issues?q=is%3Aissue+is%3Aclosed) first as it might have already been solved.
-If it hasn't been solved, and/or you also have questions, please feel free to create an [open issue!](https://github.com/gabrielmartell/COMP3305-Project-Template/issues). If need be, you can also shoot me an email at gabemartell@cmail.carleton.ca.
+If it hasn't been solved, and/or you also have questions, please feel free to create an [open issue!](https://github.com/gabrielmartell/COMP3305-Project-Template/issues). If need be, you can also shoot me an email at gabemartell@cmail.carleton.ca - although I would respond quicker to the GitHub issues.
 
 # CARLETON ACADEMIC INTEGRITY
 Any alterations to the code, such as modifying the time, will be flagged for suspicion of cheating - and thus will be reviewed by the staff and, if need be, the Dean.
