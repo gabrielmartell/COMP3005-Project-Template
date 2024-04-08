@@ -4,9 +4,8 @@
 > **This README is an _important_ guide to effectively using this repository and finishing this project.**
 
 ### Updates (04/03/2024)
-```Ver 1.0 -> Ver 1.1
-- Added some more comments for accurate guidance
-- Changed time collection - no longer using the overhead of Python but the SQL "EXPLAIN ANALYZE" computations.
+```Ver 1.1 -> Ver 1.11
+- Changed CSV writer to encoding UTF-8. This would allow students who do not have the UTF-8 locale to test this.
 ```
 ## Starter Code:
 - _queries.py_
