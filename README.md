@@ -3,7 +3,7 @@
 >
 > **This README is an _important_ guide to effectively using this repository and finishing this project.**
 
-### Updates (04/03/2024)
+### Updates (04/08/2024)
 ```Ver 1.1 -> Ver 1.11
 - Changed CSV writer to encoding UTF-8. This would allow students who do not have the UTF-8 locale to test this.
 ```
