@@ -1,7 +1,7 @@
 # Created by Gabriel Martell
 
 '''
-Version 1.1 (04/02/2024)
+Version 1.11 (04/02/2024)
 =========================================================
 queries.py (Carleton University COMP3005 - Database Management Student Template Code)
 
