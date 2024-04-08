@@ -1,4 +1,4 @@
-# COMP3005 Queries Code (ver 1.1)
+# COMP3005 Queries Code (ver 1.11)
 > The following queries.py file is the template code for COMP3005 Database Project 1, which will be used for the autograder.
 >
 > **This README is an _important_ guide to effectively using this repository and finishing this project.**
