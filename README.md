@@ -59,7 +59,7 @@ As the autograder is also connecting to your databases, to reiterate, any change
       
 ## Final Deliverable:
 Your source code file(s) that maps and loads the existing JSON dataset from the JSON files into your database. This code must be stored in a directory named "json_loader".
-Therefore, in your submission repository, you are _only_ submitting the script "queries.py", *your* dbexport.sql, and the "json_loader" directory.
+Therefore, in your submission repository, you are _only_ submitting the script "queries.py", *your* dbexport.sql, ".gitattributes" when you import the dbexport.sql as an LFS, and the "json_loader" directory.
 Any additional submissions will ***void*** the entire ***code submission.***
 
 ### How to Submit Large Files
