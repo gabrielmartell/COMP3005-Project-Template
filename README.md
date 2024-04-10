@@ -104,6 +104,7 @@ Git LFS (Large File Storage) allows the submission of these large files by using
 - Then, you can commit using ```git commit -m "Commit Message"```
 - And then finally, you can push to your repository, ```git push -u origin main```
 - The terminal would then prompt you for your GitHub username and password, however, as of August 13th, 2021, GitHub has removed account password authentication for terminal pushes. Therefore, please use this following [article](https://dev.to/shafia/support-for-password-authentication-was-removed-please-use-a-personal-access-token-instead-4nbk) to set up your own authentication key.
+- It will loop and continously ask for your username and password based on how many files you are pushing!
 
 - Your following submission should then look like the following:
 ![image](https://github.com/gabrielmartell/COMP3005-Project-Template/assets/120336080/19e76627-a700-4886-b294-afb95af25999)
