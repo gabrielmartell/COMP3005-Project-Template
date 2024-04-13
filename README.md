@@ -33,6 +33,8 @@ Once your database has been designed, you are then tasked to export this databas
 
 Given that the previous two steps are accomplished, your task is to now ONLY write your SQL queries within the prompted space within each Q_# method (where # is the question number).
 
+This given task must be completed on an Ubuntu Linux environment, see above.
+
 ## Testing:
 The _queries.py_ file and your exported _dbexport.sql_ file should be within the same directory.
 
