@@ -1,11 +1,14 @@
-# COMP3005 Queries Code (ver 1.11)
+# COMP3005 Queries Code (ver 1.2)
 > The following queries.py file is the template code for COMP3005 Database Project 1, which will be used for the autograder.
 >
 > **This README is an _important_ guide to effectively using this repository and finishing this project.**
 
-### Updates (04/08/2024)
-```Ver 1.1 -> Ver 1.11
-- Changed CSV writer to encoding UTF-8. This would allow students who do not have the UTF-8 locale to test this.
+### Updates (04/13/2024)
+```Ver 1.11 -> Ver 1.2
+- Changed dbexport.sql reading bug where directories with spaces caused crashes.
+- Fixed connection/cursor linkage, solving the overarching multipled-values bug.
+- Added additional information on how to change postgres user password.
+- Added dump so that when dbexport.sql is dumping, no text is provided (output is sent to /dev/null).
 ```
 ## Starter Code:
 - _queries.py_
@@ -17,6 +20,8 @@
 This project, and in turn the autograder and starter code, uses psycopg3 on a v22.04 Ubuntu Linux environment. 
 - [psycopg3 Installation and Documentation](https://www.psycopg.org/psycopg3/docs/)
 - [Carleton University VM Downloads](https://carleton.ca/scs/tech-support/virtual-machines/)
+- [PostgreSQL](https://ubuntu.com/server/docs/databases-postgresql)
+- [pgAdmin4](https://www.pgadmin.org/download/pgadmin-4-apt/) (This is ideal to create and test your databases).
 
 ## Task:
 As per the project guidelines,
@@ -47,7 +52,7 @@ The reasoning for two databases is because the connection cannot drop a database
 You _may_ change these values to test on your end, **but under _no circumstance in the final deliverable should these initial values be different_.**
 
 Expected Output:
-> While testing, your output will be the dbexport.sql's log, and then following are your query times.
+> While testing, your outputare your query times.
 > **INC** simply means incomplete.
 
 ## Warning:
@@ -109,6 +114,7 @@ Git LFS (Large File Storage) allows the submission of these large files by using
 - Your following submission should then look like the following:
 ![image](https://github.com/gabrielmartell/COMP3005-Project-Template/assets/120336080/19e76627-a700-4886-b294-afb95af25999)
 
+- If your database is less than 100MB and you didn't track it, your output would be like this minus the .gitattributes.
 ## Bugs and Questions:
 If you run into any fatal errors or bugs, please consult the [closed issues](https://github.com/gabrielmartell/COMP3005-Project-Template/issues?q=is%3Aissue+is%3Aclosed) first as it might have already been solved.
 If it hasn't been solved, and/or you also have questions, please feel free to create an [open issue!](https://github.com/gabrielmartell/COMP3305-Project-Template/issues). If need be, you can also shoot me an email at gabemartell@cmail.carleton.ca - although I would respond quicker to the GitHub issues.
