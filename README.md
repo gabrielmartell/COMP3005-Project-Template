@@ -1,14 +1,12 @@
-# COMP3005 Queries Code (ver 1.2)
+# COMP3005 Queries Code (ver 1.3)
 > The following queries.py file is the template code for COMP3005 Database Project 1, which will be used for the autograder.
 >
 > **This README is an _important_ guide to effectively using this repository and finishing this project.**
+### It is important that you THOROUGHLY read this README to properly submit your Project without penalties.
 
-### Updates (04/13/2024)
-```Ver 1.11 -> Ver 1.2
-- Changed dbexport.sql reading bug where directories with spaces caused crashes.
-- Fixed connection/cursor linkage, solving the overarching multipled-values bug.
-- Added additional information on how to change postgres user password.
-- Added dump so that when dbexport.sql is dumping, no text is provided (output is sent to /dev/null).
+### Updates (04/25/2024)
+```Ver 1.2 -> Ver 1.3
+- Try/Except clause for cursor execution of query.
 ```
 ## Starter Code:
 - _queries.py_
@@ -59,7 +57,7 @@ Expected Output:
 
 ## Warning:
 As the autograder is also connecting to your databases, to reiterate, any change to the initial values of the connection variables will result in your code submission becoming _void_. You may change these values for your own testing purposes, (e.g, you have a different password), but do so at your discretion.
-  - What else will _VOID_ your submission?
+  - What else will _PENALIZE_ your submission?
     - Any _additional_ submissions in your repository.
     - _Other_ print statements.
     - Other alterations to code other than the query executions (please view ACADEMIC INTEGRITY below).
@@ -69,7 +67,6 @@ Your source code file(s) that maps and loads the existing JSON dataset from the 
 Therefore, in your submission repository, you are _only_ submitting the script "queries.py", *your* dbexport.sql, ".gitattributes" when you import the dbexport.sql as an LFS, and the "json_loader" directory.
 Any additional submissions will ***void*** the entire ***code submission.***
 
-### How to Submit Large Files
 GitHub has a restriction to submission size - if any file exceeds 100.00 MB it simply cannot be added to your repository - so for this case, your dbexport.sql. Luckily, you may use Git LFS to your advantage.
 Git LFS (Large File Storage) allows the submission of these large files by using reference pointers to get this data - this will be beneficial for both you and the grader.
 
@@ -113,10 +110,14 @@ Git LFS (Large File Storage) allows the submission of these large files by using
 - The terminal would then prompt you for your GitHub username and password, however, as of August 13th, 2021, GitHub has removed account password authentication for terminal pushes. Therefore, please use this following [article](https://dev.to/shafia/support-for-password-authentication-was-removed-please-use-a-personal-access-token-instead-4nbk) to set up your own authentication key.
 - It will loop and continously ask for your username and password based on how many files you are pushing!
 
-- Your following submission should then look like the following:
+### Your following submission should look like the following (if you used GIT LFS):
 ![image](https://github.com/gabrielmartell/COMP3005-Project-Template/assets/120336080/19e76627-a700-4886-b294-afb95af25999)
 
-- If your database is less than 100MB and you didn't track it, your output would be like this minus the .gitattributes.
+- If your database is less than 100MB and you didn't track your database, your output would be like the above picture without the .gitattributes.
+
+## Before You Submit:
+It is imperative that you test your _queries.py_ in your Linux environment with your database before submitting it. _pgAdmin4_ is a good tool to use for testing your queries, yet, it is NOT case-sensitive, whereas the autograder (and _psql_) is.
+
 ## Bugs and Questions:
 If you run into any fatal errors or bugs, please consult the [closed issues](https://github.com/gabrielmartell/COMP3005-Project-Template/issues?q=is%3Aissue+is%3Aclosed) first as it might have already been solved.
 If it hasn't been solved, and/or you also have questions, please feel free to create an [open issue!](https://github.com/gabrielmartell/COMP3305-Project-Template/issues). If need be, you can also shoot me an email at gabemartell@cmail.carleton.ca - although I would respond quicker to the GitHub issues.
