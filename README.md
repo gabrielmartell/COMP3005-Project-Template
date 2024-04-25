@@ -27,7 +27,7 @@ As per the project guidelines,
 dataset is in JSON format and can be downloaded from https://github.com/statsbomb/open-data/tree/0067cae166a56aa80b2ef18f61e16158d6a7359a1. The documentation of the dataset is also available in the
 above URL. After designing the database, you need to import the data from the JSON files into your database."
 
-Once your database has been designed, you are then tasked to export this database into an .sql file named "dbexport" - this can be accomplished using [pg_dump](https://www.postgresql.org/docs/current/app-pgdump.html).
+Once your database has been designed, you are then tasked to export this database into an .sql file named *"dbexport"* - this can be accomplished using [pg_dump](https://www.postgresql.org/docs/current/app-pgdump.html).
 
 Given that the previous two steps are accomplished, your task is to now ONLY write your SQL queries within the prompted space within each Q_# method (where # is the question number).
 
@@ -119,6 +119,8 @@ Git LFS (Large File Storage) allows the submission of these large files by using
 > It is imperative that you test your _queries.py_ in your Linux environment with your database before submitting it. _pgAdmin4_ is a good tool to use for testing your queries, yet, it is NOT case-sensitive, whereas the autograder (and _psql_) is.
 >
 > The Linux environment local encoding is UTF-8 - thus ensure that your database is exported in UTF-8.
+>
+> Ensure you only have the ESSENTIAL folders. These include your _json_loader_, _queries.py_, _dbexport.sql_ and your .gitattributes if needed.
 
 ## Bugs and Questions:
 If you run into any fatal errors or bugs, please consult the [closed issues](https://github.com/gabrielmartell/COMP3005-Project-Template/issues?q=is%3Aissue+is%3Aclosed) first as it might have already been solved.
