@@ -63,6 +63,7 @@ As the autograder is also connecting to your databases, to reiterate, any change
   - What else will _PENALIZE_ your submission?
     - Any _additional_ submissions in your repository.
     - _Other_ print statements.
+    - Outrageously large _json_loader_ folders - that is, do not include the entire dataset in your folder.
     - Other alterations to code other than the query executions (please view ACADEMIC INTEGRITY below).
       
 ## Final Deliverable:
