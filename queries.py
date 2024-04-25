@@ -1,7 +1,7 @@
 # Created by Gabriel Martell
 
 '''
-Version 1.2 (04/13/2024)
+Version 1.3 (04/25/2024)
 =========================================================
 queries.py (Carleton University COMP3005 - Database Management Student Template Code)
 
@@ -186,7 +186,10 @@ def Q_1(conn, execution_time):
     #==========================================================================
 
     time_val = get_time(cursor, query)
-    cursor.execute(query)
+    try:
+        cursor.execute(query)
+    except:
+        pass
     execution_time[0] = (time_val)
 
     write_csv(execution_time, cursor, 1)
@@ -209,7 +212,10 @@ def Q_2(conn, execution_time):
     #==========================================================================
 
     time_val = get_time(cursor, query)
-    cursor.execute(query)
+    try:
+        cursor.execute(query)
+    except:
+        pass
     execution_time[1] = (time_val)
 
     write_csv(execution_time, cursor, 2)
@@ -232,7 +238,10 @@ def Q_3(conn, execution_time):
     #==========================================================================
 
     time_val = get_time(cursor, query)
-    cursor.execute(query)
+    try:
+        cursor.execute(query)
+    except:
+        pass
     execution_time[2] = (time_val)
 
     write_csv(execution_time, cursor, 3)
@@ -254,7 +263,10 @@ def Q_4(conn, execution_time):
     #==========================================================================
 
     time_val = get_time(cursor, query)
-    cursor.execute(query)
+    try:
+        cursor.execute(query)
+    except:
+        pass
     execution_time[3] = (time_val)
 
     write_csv(execution_time, cursor, 4)
@@ -276,7 +288,10 @@ def Q_5(conn, execution_time):
     #==========================================================================
 
     time_val = get_time(cursor, query)
-    cursor.execute(query)
+    try:
+        cursor.execute(query)
+    except:
+        pass
     execution_time[4] = (time_val)
 
     write_csv(execution_time, cursor, 5)
@@ -298,7 +313,10 @@ def Q_6(conn, execution_time):
     #==========================================================================
 
     time_val = get_time(cursor, query)
-    cursor.execute(query)
+    try:
+        cursor.execute(query)
+    except:
+        pass
     execution_time[5] = (time_val)
 
     write_csv(execution_time, cursor, 6)
@@ -321,7 +339,10 @@ def Q_7(conn, execution_time):
     #==========================================================================
 
     time_val = get_time(cursor, query)
-    cursor.execute(query)
+    try:
+        cursor.execute(query)
+    except:
+        pass
     execution_time[6] = (time_val)
 
     write_csv(execution_time, cursor, 7)
@@ -343,7 +364,10 @@ def Q_8(conn, execution_time):
     #==========================================================================
 
     time_val = get_time(cursor, query)
-    cursor.execute(query)
+    try:
+        cursor.execute(query)
+    except:
+        pass
     execution_time[7] = (time_val)
 
     write_csv(execution_time, cursor, 8)
@@ -365,7 +389,10 @@ def Q_9(conn, execution_time):
     #==========================================================================
 
     time_val = get_time(cursor, query)
-    cursor.execute(query)
+    try:
+        cursor.execute(query)
+    except:
+        pass
     execution_time[8] = (time_val)
 
     write_csv(execution_time, cursor, 9)
@@ -387,7 +414,10 @@ def Q_10(conn, execution_time):
     #==========================================================================
 
     time_val = get_time(cursor, query)
-    cursor.execute(query)
+    try:
+        cursor.execute(query)
+    except:
+        pass
     execution_time[9] = (time_val)
 
     write_csv(execution_time, cursor, 10)
