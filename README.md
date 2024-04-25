@@ -116,7 +116,9 @@ Git LFS (Large File Storage) allows the submission of these large files by using
 - If your database is less than 100MB and you didn't track your database, your output would be like the above picture without the .gitattributes.
 
 ## Before You Submit:
-It is imperative that you test your _queries.py_ in your Linux environment with your database before submitting it. _pgAdmin4_ is a good tool to use for testing your queries, yet, it is NOT case-sensitive, whereas the autograder (and _psql_) is.
+> It is imperative that you test your _queries.py_ in your Linux environment with your database before submitting it. _pgAdmin4_ is a good tool to use for testing your queries, yet, it is NOT case-sensitive, whereas the autograder (and _psql_) is.
+>
+> The Linux environment local encoding is UTF-8 - thus ensure that your database is exported in UTF-8.
 
 ## Bugs and Questions:
 If you run into any fatal errors or bugs, please consult the [closed issues](https://github.com/gabrielmartell/COMP3005-Project-Template/issues?q=is%3Aissue+is%3Aclosed) first as it might have already been solved.
