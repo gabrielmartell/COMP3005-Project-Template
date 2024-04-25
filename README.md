@@ -59,7 +59,7 @@ You _may_ change these values to test on your end, **but under _no circumstance 
 > Any fatal errors in your query will be notified to you before the time prints.
 
 ## Warning:
-As the autograder is also connecting to your databases, to reiterate, any change to the initial values of the connection variables will result in your code submission becoming _void_. You may change these values for your own testing purposes, (e.g, you have a different password), but do so at your discretion.
+As the autograder is also connecting to your databases, to reiterate, any change to the initial values of the connection variables will result in your code submission becoming _penalized_. You may change these values for your own testing purposes, (e.g, you have a different password), but do so at your discretion.
   - What else will _PENALIZE_ your submission?
     - Any _additional_ submissions in your repository.
     - _Other_ print statements.
@@ -68,7 +68,7 @@ As the autograder is also connecting to your databases, to reiterate, any change
 ## Final Deliverable:
 Your source code file(s) that maps and loads the existing JSON dataset from the JSON files into your database. This code must be stored in a directory named "json_loader".
 Therefore, in your submission repository, you are _only_ submitting the script "queries.py", *your* dbexport.sql, ".gitattributes" when you import the dbexport.sql as an LFS, and the "json_loader" directory.
-Any additional submissions will ***void*** the entire ***code submission.***
+Any additional submissions will ***penalize*** the entire ***code submission.***
 
 GitHub has a restriction to submission size - if any file exceeds 100.00 MB it simply cannot be added to your repository - so for this case, your dbexport.sql. Luckily, you may use Git LFS to your advantage.
 Git LFS (Large File Storage) allows the submission of these large files by using reference pointers to get this data - this will be beneficial for both you and the grader.
