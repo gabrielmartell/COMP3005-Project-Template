@@ -49,11 +49,14 @@ To briefly explain, these variables are used to connect to the root database nam
 The code's process for each query is to create a database named "query_database", import your dbexport.sql file into this database, execute the query, and then drop the database (to avoid any alterations so results are not affected down the line).
 The reasoning for two databases is because the connection cannot drop a database it is currently connected to, hence the two databases - one for a root connection and one for query execution.
 
-You _may_ change these values to test on your end, **but under _no circumstance in the final deliverable should these initial values be different_.**
+You _may_ change these values to test on your end, **but under _no circumstance in the final deliverable should these initial values be different_.** Mismtached values from the initial values will result in penalties applied to your final submission.
 
-Expected Output:
-> While testing, your outputare your query times.
+### Expected Output when Testing:
+> While testing, your output are your query times.
+> 
 > **INC** simply means incomplete.
+>
+> Any fatal errors in your query will be notified to you before the time prints.
 
 ## Warning:
 As the autograder is also connecting to your databases, to reiterate, any change to the initial values of the connection variables will result in your code submission becoming _void_. You may change these values for your own testing purposes, (e.g, you have a different password), but do so at your discretion.
